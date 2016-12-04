@@ -1,14 +1,15 @@
 ##LiFeR - Line Feed Remover
 Program used to remove unexpected Line Feed / Carriege Return while copying text from Portable Document Format (PDF)
 * **Original Doc**
+
 ![Original](https://github.com/abudawud/lifer/blob/master/doc/orig.png)
 
 * **Before and After**
 ![Befor After](https://github.com/abudawud/lifer/blob/master/doc/befaf.png)
 
 ##AUTHOR
-written by Ahmad Waris Al H. - Abu Dawud
-e-mail   : warishafidz@gmail.com
+* written by Ahmad Waris Al H. - Abu Dawud
+* e-mail   : warishafidz@gmail.com
 
 ##LICENSE
 This project is free software, released under the GPL v3 license. 
