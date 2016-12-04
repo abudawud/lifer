@@ -1,0 +1,40 @@
+able with no single point of failure. To scale up, the system grows where needed—
+by adding storage nodes to increase storage capacity, adding proxy nodes as requests
+increase, and growing network capacity where bottlenecks are detected.
+Durability
+Swift’s innovative distributed architecture means that it provides extremely durable
+storage. The essence of durability is that stored objects will always be available and
+have data integrity. To ensure an object is persistently available, Swift copies it and
+distributes the copies across the cluster. Auditing processes run, verifying that data
+is still good. Replicators run to ensure that the correct number of copies are in the
+cluster. In the event that a device fails, missing data copies are replicated and placed
+throughout the cluster to ensure that durability levels are maintained.
+Multi-regional capability
+Swift can distribute data across multiple data centers, which may have high latency
+between them. Distribution can be done for a number of reasons. One would be to
+provide high availability of data by allowing it to be accessed from each region.
+Another reason would be to designate one region as a disaster recovery site.
+Swift does this by allowing operators to define regions and zones within a cluster.
+Regions generally specify geographic boundaries, such as data centers in different
+cities. Zones are portions of regions that define points of failure for groups of ma‐
+chines, such as a rack where all the nodes are on one power source going to the
+same switch. The use of regions and zones ensures that Swift places copies across
+the cluster in a way that allows for failures. It enables a cluster to survive even if a
+zone is unavailable. This provides additional guarantees of durability and availa‐
+bility of data.
+High concurrency
+Swift is architected to distribute requests across multiple servers. By using a shared-
+nothing approach, Swift can take advantage of all the available server capacity to
+handle many requests simultaneously. This increases the system’s concurrency and
+total throughput available. This is a great advantage to those who need to satisfy
+the storage needs of large-scale web workloads.
+Flexible storage
+Swift offers great flexibility in data architecture and hardware, allowing operators
+to tailor their storage to meet the specific needs of their users. In addition to the
+ability to mix and match commodity hardware, Swift has storage polices that allow
+operators to use hardware in a way that best handles the constraints of various
+situations. For example, need higher performance for some data? Create a storage
+policy that only uses the SSDs in the cluster. Need data to be available across the
+globe? Create a storage policy that encompasses data centers across the world. Need
+data to be in a particular country? Create a policy that will place data only in that
+region.
