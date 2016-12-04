@@ -14,8 +14,10 @@ please refer to www.gnu.org
 ##Feature
 * Detect Title / Sub Title
 * Remove countinous sentence sign (-)
+
 ##Bug
 * Sentence end with '.' known as new paraghraph
+
 ##About
-i write this program just for hobby, so if you found a bug or not suite to you,
+I write this program just for hobby, so if you found a bug or not suite to you,
 you can modify it as you want. contact me if you have any question(s) or suggestion.
